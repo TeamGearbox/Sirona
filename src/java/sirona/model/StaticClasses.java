@@ -36,7 +36,7 @@ public class StaticClasses {
         for(int index = 1; index < 13; index++){
             Hour pmh = new Hour(false, index);
             Hour amH = new Hour(true, index);
-            //System.out.println(pmh.getName());
+            ///System.out.println(pmh.getName());
             hourList.put(pmh.getName(), pmh);
             hourList.put(amH.getName(), amH);
             //System.out.println(StaticClasses.hourList.get("AM:"+index).getHourTime());
