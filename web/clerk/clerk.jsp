@@ -1,14 +1,16 @@
-<!--
-Document: index
-    Created on : Nov 15, 2018, 2:55:40 PM
+<%-- 
+    Document   : clerk
+    Created on : Nov 29, 2018, 9:41:14 PM
     Author     : Geoffrey
--->
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../styles/patient.css">
+        <link rel="stylesheet" href="../styles/clerk.css">
 	    <link rel="stylesheet" href="../styles/w3.css">
         <title>Sirona</title>
     </head>
@@ -16,8 +18,8 @@ Document: index
 
     <!-- Header -->
     <header class="w3-top">
-      <div class="w3-bar w3-black w3-top w3-left-align w3-large">
-        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Welcome, &lt;UserName&gt;</a>
+      <div class="w3-bar w3-light-blue w3-top w3-left-align w3-black w3-large">
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Welcome, &lt;clerkUserName&gt;</a>
       </div>
     </header>
 
@@ -26,9 +28,8 @@ Document: index
       <h4 class="w3-bar-item"><b>Menu</b></h4>
       <a class="w3-bar-item w3-button w3-hover-black" href="#">Home</a>
       <a class="w3-bar-item w3-button w3-hover-black" href="#">Appointments</a>
-      <a class="w3-bar-item w3-button w3-hover-black" href="#">Messages</a>
-      <a class="w3-bar-item w3-button w3-hover-black" href="#">Billing</a>  
-	  <a class="w3-bar-item w3-button w3-hover-black" href="#">Health</a>
+      <a class="w3-bar-item w3-button w3-hover-black" href="#">Messages</a>  
+      <a class="w3-bar-item w3-button w3-hover-black" href="#">Billing</a>
       <a class="w3-bar-item w3-button w3-hover-black" href="#">Profile</a>
     </nav>
 
@@ -43,8 +44,8 @@ Document: index
         <div class="w3-twothird w3-container">
           <h1 class="w3-text-teal">Heading</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-			  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
-			  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+                          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
       </div>
 
