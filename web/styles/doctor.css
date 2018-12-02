@@ -6,6 +6,7 @@ and open the template in the editor.
 /* 
     Created on : Nov 29, 2018, 9:33:39 PM
     Author     : Geoffrey
+    Modified   : Arturo
 */
 html,body,h1,h2,h3,h4,h5,h6 {
     font-family: "Roboto", sans-serif;
@@ -17,3 +18,43 @@ html,body,h1,h2,h3,h4,h5,h6 {
     bottom: 0;
     height: inherit;
 }
+
+/* styling the accordion */
+.accordion{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+/* adding color to accordion button if clicked on */
+.active, .accordion:hover{
+    background-color: #87CEEB;
+}
+
+.accordion:after{
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left : 5px;
+}
+
+.active:after{
+    content: "\2212";
+}
+.panel{
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+

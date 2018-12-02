@@ -2,6 +2,7 @@
     Document   : doctor
     Created on : Nov 29, 2018, 9:36:52 PM
     Author     : Geoffrey
+    Modified by: Arturo 
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -11,7 +12,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../styles/doctor.css">
-	    <link rel="stylesheet" href="../styles/w3.css">
+ 	<link rel="stylesheet" href="../styles/w3.css">
         <title>Sirona</title>
     </head>
     <body>
@@ -27,10 +28,21 @@
     <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
       <h4 class="w3-bar-item"><b>Menu</b></h4>
       <a class="w3-bar-item w3-button w3-hover-light-blue" href="#">Home</a>
-      <a class="w3-bar-item w3-button w3-hover-light-blue" href="#">Messages</a>
+      
+ <!-- commenting out the Messages link to test if accordion can be added with MESSAGE specific options -->     
+ <!--     <a class="w3-bar-item w3-button w3-hover-light-blue" href="#">Messages</a> -->
+ 
+      <button class="accordion">Messages</button>
+      <div class="panel">
+          <a class="w3-bar-item w3-button w3-hover-light-blue" href="#">Compose</a>
+          <a class="w3-bar-item w3-button w3-hover-light-blue" href="#">Inbox</a>
+          <a class="w3-bar-item w3-button w3-hover-light-blue" href="#">Sent</a>
+      </div>
       <a class="w3-bar-item w3-button w3-hover-light-blue" href="#">Chart</a>  
       <a class="w3-bar-item w3-button w3-hover-light-blue" href="#">Patient</a>
       <a class="w3-bar-item w3-button w3-hover-light-blue" href="#">Profile</a>
+      <a class="w3-bar-item w3-button w3-hover-light-blue" href="#">Order Prescription</a>
+      <a class="w3-bar-item w3-button w3-hover-light-blue" href="#">Order Test</a>
     </nav>
 
 	
@@ -58,6 +70,7 @@
 	<!-- End of Main Content -->
 </div>
 	<script>
+            
 // Get the Sidebar
 var mySidebar = document.getElementById("mySidebar");
 
@@ -79,6 +92,22 @@ function w3_open() {
 function w3_close() {
     mySidebar.style.display = "none";
     overlayBg.style.display = "none";
+}
+
+// added to be able to have accordion 
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for(i=0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function(){
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if(panel.style.maxHeight){
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    });
 }
 </script>
 </body>
