@@ -39,10 +39,34 @@ Document   : index
 	            </div>
 
 	            <div class="container" style="background-color:#f1f1f1">
-	                <a href="/Canavast"><button type="button" class="cancelbtn"></button></a>
-					<span class="psw">Forgot <a href="#">password?</a></span>
+	                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" type="button" class="contactBtn">Contact Us</button>
+			<span class="psw">Forgot <a href="#">password?</a></span>
+                        
+                        <div id="id01" class="modal">
+                            <form class="modal-content animate" >
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Window">&times;</span>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2453.422215829962!2d-98.61963381830446!3d29.584407979910107!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c666198d59cb7%3A0xb3ae798a8be50817!2sNorth+Paseo+Building!5e0!3m2!1sen!2sus!4v1543732003580" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    </br>
+                                    <p><font size="3" color="blue" >Come visit us</font></p>
+                                    <p><font size="3" color="blue">Call us at (210)123-4567</font></p>
+                                    <p><font size="3" color="blue">Or Email us at 123@sirona.com</font></p>
+                                </div>
+                            </form>    
+                        </div>
+                        
 	            </div>
 	        </form>
 	    </div>
+        
+        <script>
+            var modal = document.getElementById('id01');
+            window.onclick=function(event){
+                if(event.target == modal){
+                    modal.style.display = 'none';
+                }
+            }
+        </script>
+        
     </body>
 </html>
