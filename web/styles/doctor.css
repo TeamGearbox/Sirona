@@ -62,4 +62,8 @@ html,body,h1,h2,h3,h4,h5,h6 {
     transition: max-height 0.2s ease-out;
 }
 
-
+.logoutLblPos{
+    position: fixed;
+    right:10px;
+    top:5px;
+}
