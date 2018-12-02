@@ -29,7 +29,7 @@
             <div class="w3-bar w3-light-blue w3-top w3-left-align w3-large">
                 <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Welcome, &lt;doctorUserName&gt;</a>
                 <div class="w3-right w3-hide-small">
-                    <a class="w3-bar-item w3-button w3-hover-white" href="#">Sign Out</a>
+                    <a class="w3-bar-item w3-button w3-hover-white" href="/Sirona/">Sign Out</a>
                 </div> 
             </div>
         </header>
