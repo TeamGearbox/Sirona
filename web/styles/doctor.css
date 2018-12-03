@@ -57,6 +57,7 @@ html,body,h1,h2,h3,h4,h5,h6 {
 .panel{
     padding: 0 18px;
     background-color: white;
+    color: gray;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -66,4 +67,39 @@ html,body,h1,h2,h3,h4,h5,h6 {
     position: fixed;
     right:10px;
     top:5px;
+}
+
+/* used for column page format */
+.columnLeft{
+    float: left;
+    width: 20%;
+    padding: 10px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing:0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th, td{
+    text-align: left;
+    padding: 16px;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
 }

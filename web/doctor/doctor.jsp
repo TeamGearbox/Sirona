@@ -20,6 +20,16 @@
         <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+        <!-- used for pie chart -->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+       
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+        </style>
         
     </head>
     
@@ -42,14 +52,23 @@
             <!-- commenting out the Messages link to test if accordion can be added with MESSAGE specific options -->     
             <!-- <a class="w3-bar-item w3-button w3-hover-light-blue" href="#">Messages</a> -->
  
+            <!-- Message accordion -->
             <button class="accordion">Messages</button>
             <div class="panel">
                 <a class="w3-bar-item w3-button w3-hover-light-blue" href="#">Compose</a>
                 <a class="w3-bar-item w3-button w3-hover-light-blue" href="#">Inbox</a>
                 <a class="w3-bar-item w3-button w3-hover-light-blue" href="#">Sent</a>
             </div>
+            
             <a class="w3-bar-item w3-button w3-hover-light-blue" href="#">Chart</a>  
-            <a class="w3-bar-item w3-button w3-hover-light-blue" href="#">Patient</a>
+            
+            <!-- Patient Accordion -->
+            <button class="accordion">Patient</button>
+            <div class="panel">
+                <a class="w3-bar-item w3-button w3-hover-light-blue" href="#">New</a>
+                <a class="w3-bar-item w3-button w3-hover-light-blue" href="#">Search</a>
+            </div>
+            
             <a class="w3-bar-item w3-button w3-hover-light-blue" href="#">Profile</a>
             <a class="w3-bar-item w3-button w3-hover-light-blue" href="#">Order Prescription</a>
             <a class="w3-bar-item w3-button w3-hover-light-blue" href="#">Order Test</a>
@@ -73,11 +92,50 @@
             </div>
             
             
-            <h1> Agenda </h1>
-            <!-- display date selecter -->    
-            <p> Enter Date: <input type ="text" id ="datepicker"></p>
-
-            
+            <!-- center page columns -->
+            <div class="row">
+                
+                <div class="columnLeft">
+                    <h1> Agenda </h1>
+                    <!-- display date selector -->    
+                    <p> Enter Date: <input type ="text" id ="datepicker"></p>
+                    <ul><li>Nothing</li></ul>
+                </div>
+                
+                <div class="column">
+                    <h3 align="center">Today's Patients</h3>
+                    <table>
+                        
+                        <!-- hard coded appointment list to display intent -->
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Time</th>
+                        </tr>
+                        <tr>
+                            <td>John</td>
+                            <td>Smith</td>
+                            <td>9:30am</td>
+                        </tr>
+                        <tr>
+                            <td>Eve</td>
+                            <td>Jackson</td>
+                            <td>10:45am</td>
+                        </tr>
+                        <tr>
+                            <td>Adam</td>
+                            <td>Gomez</td>
+                            <td>1:00pm</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="column">
+                    <div id="piechart"></div>
+                </div>
+                
+            </div>
+               
             <footer id="myFooter">
                 <div class="w3-container w3-light-blue">
                     <p align="right">Powered by Team Gearbox</p>
@@ -139,6 +197,37 @@
                         panel.style.maxHeight = panel.scrollHeight + "px";
                     }
                 });
+            }
+        </script>
+        
+        <script type="text/javascript">
+            // Load google charts
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+
+            // Draw the chart and set the chart values
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Category', 'Cost'],
+                    ['Labor', 8],
+                    ['Office Supplies', 2],
+                    ['Medical Equipment', 4],
+                    ['Building Utilities', 2],
+                    ['Other', 8]
+                ]);
+
+                // Optional; add a title and set the width and height of the chart
+                var options = {
+                    'title':'My Expenses', 
+                    'width':750, 
+                    'height':500, 
+                    is3D: 'true', 
+                    'fontSize':20
+                };
+
+                // Display the chart inside the <div> element with id="piechart"
+                var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                chart.draw(data, options);
             }
         </script>
     </body>
