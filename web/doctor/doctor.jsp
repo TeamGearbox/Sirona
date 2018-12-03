@@ -125,7 +125,7 @@
                 //$("#datepicker-13").datepicker("show");                
             })
 
-            // added to be able to have accordion 
+            // added to be able to have accordion when Messages is selected
             var acc = document.getElementsByClassName("accordion");
             var i;
 
