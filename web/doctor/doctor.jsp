@@ -208,17 +208,17 @@
             // Draw the chart and set the chart values
             function drawChart() {
                 var data = google.visualization.arrayToDataTable([
-                    ['Category', 'Cost'],
-                    ['Labor', 8],
-                    ['Office Supplies', 2],
-                    ['Medical Equipment', 4],
-                    ['Building Utilities', 2],
-                    ['Other', 8]
+                    ['Category', 'Count'],
+                    ['Very Satisfied', 8],
+                    ['Satisfied', 10],
+                    ['Neither', 4],
+                    ['Dissatisfied', 1],
+                    ['Very Dissatisfied', 1]
                 ]);
 
                 // Optional; add a title and set the width and height of the chart
                 var options = {
-                    'title':'My Expenses', 
+                    'title':'Patient satisfaction', 
                     'width':750, 
                     'height':500, 
                     is3D: 'true', 
