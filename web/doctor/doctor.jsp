@@ -53,18 +53,18 @@
                 <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'Sent')" id="defaultOpen">Sent</button>
             </div>
             
-            <a class="w3-bar-item w3-button w3-hover-light-blue" href="#">Chart</a>  
+            <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'Chart')" id="defaultOpen">Chart</button>  
             
             <!-- Patient Accordion -->
             <button class="accordion">Patient</button>
             <div class="panel">
                 <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'New')">New</button>
-                <a class="w3-bar-item w3-button w3-hover-light-blue" href="#">Search</a>
+                <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'Search')" id="defaultOpen">Search</button>
             </div>
             
-            <a class="w3-bar-item w3-button w3-hover-light-blue" href="#">Profile</a>
-            <a class="w3-bar-item w3-button w3-hover-light-blue" href="#">Order Prescription</a>
-            <a class="w3-bar-item w3-button w3-hover-light-blue" href="#">Order Test</a>
+            <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'Profile')" id="defaultOpen">Profile</button>
+            <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'Order Prescriptions')" id="defaultOpen">Order Prescriptions</button>
+            <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'Order Test')" id="defaultOpen">Order Test</button>
         </nav>
         <!-- end of sidebar -->
 
@@ -164,6 +164,51 @@
                 </div>
             </div>
             <!-- end of patient content -->
+            
+            <!-- chart page content -->
+            <div class="w3-main" style="margin-left:250px" id="Chart">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">Patient Charts</h1>
+                    <p>Patient chart content goes here</p>
+                </div>
+            </div>
+            <!-- end of chart content -->
+            
+            <!-- patient search content -->
+            <div class="w3-main" style="margin-left:250px" id="Search">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">Search Patient Form</h1>
+                    <p>Search patient form goes here</p>
+                </div>
+            </div>
+            <!-- end of search page content -->
+            
+            <!-- profile page content -->
+            <div class="w3-main" style="margin-left:250px" id="Profile">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">User Profile Page</h1>
+                    <p>User profile content goes here</p>
+                </div>
+            </div>
+            <!-- end of profile page content -->
+            
+            <!-- order prescription page content -->
+            <div class="w3-main" style="margin-left:250px" id="Order Prescriptions">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">Prescription Order Page</h1>
+                    <p>prescription order content goes here</p>
+                </div>
+            </div>
+            <!-- end of order prescription page content -->
+            
+            <!-- order test page content -->
+            <div class="w3-main" style="margin-left:250px" id="Order Test">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-teal">Order Test Page</h1>
+                    <p>order tests page content goes here</p>
+                </div>
+            </div>
+            <!-- end of order test content -->
                 
         </div>
                
