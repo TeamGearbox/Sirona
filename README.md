@@ -11,7 +11,7 @@ In order to run Sirona you will need the following:
 1. An IDE (e.g. NetBeans, IntelliJ IDEA, Eclispe, etc.) (recommended)
    1. www.netbeans.org
 1. Install Tomcat (required)
-   1. www.tomcat.apache.org/
+   1. http://tomcat.apache.org
 1. MySQL Community Server (required)
    1. http://dev.mysql.com/downloads/mysql/
 1. MySQL Workbench (recommeded)
