@@ -12,7 +12,9 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../styles/doctor.css">
- 	<link rel="stylesheet" href="../styles/w3.css">
+        <link rel="stylesheet" href="../styles/w3.css">
+        <style>
+        </style>
         <title>Sirona</title>
         
         <!-- added the following lines of code to be able to implement a date picker.
@@ -32,9 +34,9 @@
         <header class="w3-top">
             <div class="w3-bar w3-light-blue w3-top w3-left-align w3-large">
                 
-                <span class="w3-bar-item">Welcome, &lt;doctorUserName&gt;</span>
+                <span class="w3-bar-item">Welcome, ${user.userName}!</span>
                 <div class="w3-right w3-hide-small">
-                    <a class="w3-bar-item w3-button w3-hover-white" href="/Sirona/">Sign Out</a>
+                    <a class="w3-bar-item w3-button w3-hover-white" href="/Sirona">Sign Out</a>
                 </div> 
             </div>
         </header>
