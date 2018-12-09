@@ -16,7 +16,7 @@ Author(s): Geoffrey Sessums, Arturo Ye, Jacinto Molina, Shawn Roberts, Monica Gi
 ## License
 MIT License
 
-Copyright (c) 2017 Geoffrey Sessums
+Copyright (c) 2018 TeamGearbox
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
