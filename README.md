@@ -7,7 +7,7 @@ store, and update patients' information.
 ## Installation
 Clone the repository wherever you like (e.g. `~/Desktop`):
 ```bash
-git clone https://github.com/gsessums/SudokuChecker.git
+git clone https://github.com/TeamGearbox/Sirona.git
 ```
 
 ## Credits
