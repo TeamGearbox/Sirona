@@ -5,10 +5,21 @@ information of a clinic. The goal is to provide physicians, nurses, and clinical
 store, and update patients' information.
 
 ## Installation
-Clone the repository wherever you like (e.g. `~/Desktop`):
-```bash
-git clone https://github.com/TeamGearbox/Sirona.git
-```
+In order to run Sirona you will need the following:
+1. Install JDK (required)
+   1. www.oracle.com/technetwork/java/javase/downloads
+1. An IDE (e.g. NetBeans, IntelliJ IDEA, Eclispe, etc.) (recommended)
+   1. www.netbeans.org
+1. Install Tomcat (required)
+   1. www.tomcat.apache.org/
+1. MySQL Community Server (required)
+   1. http://dev.mysql.com/downloads/mysql/
+1. MySQL Workbench (recommeded)
+   1. http://dev.mysql.com/downloads/tools/workbench/
+1. Clone the repository wherever you like (e.g. `~/Desktop` or to an IDE):
+   1. ```bash
+      git clone https://github.com/TeamGearbox/Sirona.git
+      ```
 
 ## Credits
 Author(s): Geoffrey Sessums, Arturo Ye, Jacinto Molina, Shawn Roberts, Monica Giurgius
