@@ -7,7 +7,7 @@ store, and update patients' information.
 ## Installation
 In order to run Sirona you will need the following:
 1. Install JDK (required)
-   1. <a href="www.oracle.com/technetwork/java/javase/downloads" target="_blank">JDK</a>
+   1. www.oracle.com/technetwork/java/javase/downloads
 1. An IDE (e.g. NetBeans, IntelliJ IDEA, Eclispe, etc.) (recommended)
    1. www.netbeans.org
 1. Install Tomcat (required)
