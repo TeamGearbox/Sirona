@@ -16,7 +16,7 @@ In order to run Sirona you will need the following:
    1. http://dev.mysql.com/downloads/mysql/
 1. MySQL Workbench (recommeded)
    1. http://dev.mysql.com/downloads/tools/workbench/
-1. Clone the repository wherever you like (e.g. `~/Desktop` or to an IDE):
+1. Clone the repository to your IDE:
    1. ```bash
       git clone https://github.com/TeamGearbox/Sirona.git
       ```
