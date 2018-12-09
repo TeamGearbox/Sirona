@@ -56,7 +56,7 @@
 
             <footer id="myFooter">
                 <div class="w3-container w3-pale-green">
-                    <p>Powered by Team Gearbox</p>
+                    <p align="right">Powered by Team Gearbox</p>
                 </div>
             </footer>
 
