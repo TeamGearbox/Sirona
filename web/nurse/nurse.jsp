@@ -33,26 +33,26 @@
         <!-- Sidebar -->
         <nav class="w3-sidebar w3-bar-block w3-large" id="mySidebar">
             <h4 class="w3-bar-item"><b>Menu</b></h4>
-            <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
+            <button class="tablinks w3-bar-item w3-button w3-hover-indigo" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
             
             <!-- Message accordion -->
-            <button class="accordion">Messages</button>
+            <button class="accordion w3-hover-indigo">Messages</button>
             <div class="panel">
-                <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'Compose')" id="defaultOpen">Compose</button>
-                <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'Inbox')" id="defaultOpen">Inbox</button>
-                <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'Sent')" id="defaultOpen">Sent</button>
+                <button class="tablinks w3-bar-item w3-button w3-hover-indigo" onclick="openTab(event, 'Compose')">Compose</button>
+                <button class="tablinks w3-bar-item w3-button w3-hover-indigo" onclick="openTab(event, 'Inbox')">Inbox</button>
+                <button class="tablinks w3-bar-item w3-button w3-hover-indigo" onclick="openTab(event, 'Sent')">Sent</button>
             </div>
             
-            <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'Chart')" id="defaultOpen">Chart</button>
+            <button class="tablinks w3-bar-item w3-button w3-hover-indigo" onclick="openTab(event, 'Chart')">Chart</button>
             
             <!-- Patient Accordion -->
-            <button class="accordion">Patient</button>
+            <button class="accordion w3-hover-indigo">Patient</button>
             <div class="panel">
-                <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'New')">New</button>
-                <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'Search')" id="defaultOpen">Search</button>
+                <button class="tablinks w3-bar-item w3-button w3-hover-indigo" onclick="openTab(event, 'New')">New</button>
+                <button class="tablinks w3-bar-item w3-button w3-hover-indigo" onclick="openTab(event, 'Search')">Search</button>
             </div>
             
-            <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'Profile')" id="defaultOpen">Profile</button>
+            <button class="tablinks w3-bar-item w3-button w3-hover-indigo" onclick="openTab(event, 'Profile')">Profile</button>
         </nav>
         <!-- end of sidebar -->
 
@@ -178,8 +178,7 @@
             
             //date function
             var dt = new Date();
-            document.getElementById("date").innerHTML = dt.toLocaleDateString();
-            
+            document.getElementById("date").innerHTML = dt.toLocaleDateString();            
         </script>
     </body>
 </html>

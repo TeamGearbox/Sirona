@@ -50,23 +50,23 @@
             <!-- Message accordion -->
             <button class="accordion">Messages</button>
             <div class="panel">
-                <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'Compose')" id="defaultOpen">Compose</button>
-                <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'Inbox')" id="defaultOpen">Inbox</button>
-                <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'Sent')" id="defaultOpen">Sent</button>
+                <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'Compose')">Compose</button>
+                <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'Inbox')">Inbox</button>
+                <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'Sent')">Sent</button>
             </div>
             
-            <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'Chart')" id="defaultOpen">Chart</button>  
+            <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'Chart')">Chart</button>  
             
             <!-- Patient Accordion -->
             <button class="accordion">Patient</button>
             <div class="panel">
                 <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'New')">New</button>
-                <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'Search')" id="defaultOpen">Search</button>
+                <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'Search')">Search</button>
             </div>
             
-            <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'Order Prescriptions')" id="defaultOpen">Order Prescriptions</button>
-            <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'Order Test')" id="defaultOpen">Order Test</button>
-            <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'Profile')" id="defaultOpen">Profile</button>
+            <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'Order Prescriptions')">Order Prescriptions</button>
+            <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'Order Test')">Order Test</button>
+            <button class="tablinks w3-bar-item w3-button w3-hover-light-blue" onclick="openTab(event, 'Profile')">Profile</button>
         </nav>
         <!-- end of sidebar -->
 
