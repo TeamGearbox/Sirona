@@ -119,7 +119,7 @@
             
         </div>
         
-        <footer id="myFooter">
+        <footer id="footer">
             <div class="w3-container w3-black">
                 <p align="right">Powered by Team Gearbox</p>
             </div>

@@ -138,7 +138,7 @@
         </div>
         <!-- End of Main Content -->
             
-        <footer id="myFooter">
+        <footer id="footer">
             <div class="w3-container w3-pale-green">
                 <p align="right">Powered by Team Gearbox</p>
             </div>
