@@ -15,6 +15,12 @@
         <link rel="stylesheet" href="../styles/clerk.css">
 	<link rel="stylesheet" href="../styles/w3.css">
         <title>Sirona</title>
+        
+        <style>
+            <%@include file="../styles/clerk.css" %>
+            <%@include file="../styles/w3.css" %>
+            <%@include file="../styles/doctor.css" %>
+        </style>
     </head>
     
     <body>
