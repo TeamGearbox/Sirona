@@ -11,9 +11,9 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../styles/doctor.css">
-        <link rel="stylesheet" href="../styles/w3.css">
         <style>
+            <%@include file="../styles/w3.css" %>
+            <%@include file="../styles/doctor.css" %>
         </style>
         <title>Sirona</title>
         
@@ -225,10 +225,10 @@
             // calendar date selector
             $(function(){
                 $("#datepicker").datepicker({
-                    showOn: "button",
-                    buttonImage: "./../images/calendar.gif",
-                    buttonImageOnly: true,
-                    buttonText: "Select Date"
+                   //showOn: "button",
+                    //buttonImage: "../images/calendar.gif",
+                    //buttonImageOnly: true,
+                    //buttonText: "Select Date"
                 });
                 
                 // if you want to calendar to be open by default, un-comment the line below

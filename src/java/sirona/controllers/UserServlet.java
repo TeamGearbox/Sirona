@@ -36,7 +36,7 @@ public class UserServlet extends HttpServlet {
 
             // store the User object in request and set URL
             request.setAttribute("user", user);
-            url = "/clerk/clerk.jsp";
+            url = "/doctor/doctor.jsp";
         }
         else if (action.equals("join")) {
             // set URL to index page
