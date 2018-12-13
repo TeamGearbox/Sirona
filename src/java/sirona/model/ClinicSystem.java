@@ -74,7 +74,75 @@ public class ClinicSystem {
     public void setPayment(PaymentSystem payment) {
         this.payment = payment;
     }
+
+    public boolean patientStatus(Patient patient){
+        for(Patient p : fullPatientList){
+            if(p.getProfile().getName().equals(patient.getProfile().getName()))
+                return true;
+        }
+        return false;
+    }
     
+    public boolean doctorStatus(Doctor doctor){
+        for(Doctor d : doctorList){
+            if(d.getProfile().getName().equals(doctor.getProfile().getName()))
+                return true;
+        }
+        return false;
+    }
+    
+    public boolean nurseStatus(Nurse nurse){
+        for(Nurse n : nurseList){
+            if(n.getProfile().getName().equals(nurse.getProfile().getName()))
+                return true;
+        }
+        return false;
+    }
+    
+    public void addPatient(Patient patient){
+        if(patientStatus(patient) == false)
+            fullPatientList.add(patient);
+            ClinicID docid = patient.getDoctorID();
+            for(Doctor d : doctorList){
+                if(d.getProfile().getClinicId().getID().equals(docid.getID()))
+                    d.addPatient(patient);
+            }
+    }
+    
+    public void addDoctor(Doctor doctor){
+        if(doctorStatus(doctor) == false)
+            doctorList.add(doctor);
+    }
+    
+    public void addNurse(Nurse nurse){
+        if(nurseStatus(nurse) == false)
+            nurseList.add(nurse);
+    }
+    
+    public void removePatient(Patient patient){
+        if(patientStatus(patient) == true){
+            fullPatientList.remove(patient);
+            ClinicID docid = patient.getDoctorID();
+            for(Doctor d : doctorList){
+                if(d.getProfile().getClinicId().getID().equals(docid.getID()))
+                    d.removePatient(patient);
+            }
+        }
+    }
+    
+    public void removeDoctor(Doctor doctor){
+        if(doctorStatus(doctor) == true)
+            doctorList.remove(doctor);
+    }
+    
+    public void removeNurse(Nurse nurse){
+        if(nurseStatus(nurse) == true)
+            nurseList.remove(nurse);
+    }
+    
+    public void login(String id, String password){
+        // get credentials and verify with database
+    }
     
     
 }

@@ -11,14 +11,15 @@ import sirona.model.StaticClasses.StaffType;
  *
  * @author jacin
  */
-public class StaffProfile {
+public class StaffProfile extends Profile{
     
     private StaffType type;
-    
-    
-    public StaffProfile(){
-        
+
+    public StaffProfile(StaffType type, String name, int phone, ClinicID clinicId, int mobilePhone, String email, Inbox inbox) {
+        super(name, phone, clinicId, mobilePhone, email, inbox);
+        this.type = type;
     }
+    
 
     public StaffType getType() {
         return type;

@@ -5,7 +5,9 @@
  */
 package sirona.model;
 
+import java.awt.Image;
 import java.io.File;
+import java.util.ArrayList;
 
 /**
  *
@@ -14,7 +16,7 @@ import java.io.File;
 public class Patient {
     
     
-    private PatientProfile patientInfo;
+    private PatientProfile profile;
     // abc123
     private ClinicID doctorID;
     private String username;
@@ -22,11 +24,13 @@ public class Patient {
     private boolean isActive;
     private Appointment app;
     private double account;
+
+
     
-    public Patient(PatientProfile profile, ClinicID DocAssID, String userName, Insurance ins){
-       this.patientInfo = profile;
+    public Patient(PatientProfile profile, ClinicID doctorID, String userName, Insurance ins){
+       this.profile = profile;
        this.username = userName;
-       this.doctorID = DocAssID;
+       this.doctorID = doctorID;
        this.ins = ins;
        this.isActive = true;
        this.account = 0.0;
@@ -45,12 +49,12 @@ public class Patient {
         
     }
 
-    public PatientProfile getPatientInfo() {
-        return patientInfo;
+    public PatientProfile getProfile() {
+        return profile;
     }
 
-    public void setPatientInfo(PatientProfile patientInfo) {
-        this.patientInfo = patientInfo;
+    public void setProfile(PatientProfile profile) {
+        this.profile = profile;
     }
 
     public ClinicID getDoctorID() {
@@ -100,5 +104,7 @@ public class Patient {
     public void setAccount(double account) {
         this.account = account;
     }
+ 
+    
     
 }

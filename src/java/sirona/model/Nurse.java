@@ -13,19 +13,19 @@ import java.util.ArrayList;
  */
 public class Nurse {
     
-    private StaffProfile workInfo;
+    private StaffProfile profile;
     private ArrayList<Patient> tempPatientList;
     
     public Nurse(){
         
     }
 
-    public StaffProfile getWorkInfo() {
-        return workInfo;
+    public StaffProfile getProfile() {
+        return profile;
     }
 
-    public void setWorkInfo(StaffProfile workInfo) {
-        this.workInfo = workInfo;
+    public void setProfile(StaffProfile profile) {
+        this.profile = profile;
     }
 
     public ArrayList<Patient> getTempPatientList() {

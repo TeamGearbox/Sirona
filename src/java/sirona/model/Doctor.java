@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class Doctor {
 
    
-    private StaffProfile workInfo;
+    private StaffProfile profile;
     private ArrayList<Patient> patientList;
     private ArrayList<Appointment> appList;
     
@@ -27,7 +27,7 @@ public class Doctor {
         this.patientList.remove(remPat);
     }
     
-    public void addPaient(Patient addPat){
+    public void addPatient(Patient addPat){
         this.patientList.add(addPat);
     }
     
@@ -36,11 +36,7 @@ public class Doctor {
     }
     
     
-    
-    
-    
-    
-    
+   
     public void removeAppointment(Appointment remPat){
         this.appList.remove(remPat);
     }
@@ -55,10 +51,7 @@ public class Doctor {
     
     
     
-    
-    
-    
-     public ArrayList<Patient> getPatientList() {
+    public ArrayList<Patient> getPatientList() {
         return patientList;
     }
 
@@ -66,11 +59,11 @@ public class Doctor {
         return appList;
     }
     public StaffProfile getProfile(){
-        return this.workInfo;
+        return this.profile;
     }
 
-    public void setWorkInfo(StaffProfile workInfo) {
-        this.workInfo = workInfo;
+    public void setProfile(StaffProfile profile) {
+        this.profile = profile;
     }
 
     public void setPatientList(ArrayList<Patient> patientList) {
