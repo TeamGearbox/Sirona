@@ -20,7 +20,7 @@ In order to run Sirona you will need the following:
    1. ```bash
       git clone https://github.com/TeamGearbox/Sirona.git
       ```
-  **NOTE: Within the dist folder is the Sirona.war file. As long as your Tomcat web server is configured correctly, simply place the war file with the webapps folder and execute the folder. The sql script is for database creation and testing.
+  **NOTE**: Within the dist folder is the Sirona.war file. As long as your Tomcat web server is configured correctly, simply place the war file with the webapps folder and execute the folder. The sql script is for database creation and testing.
 
 ## Credits
 Author(s): Geoffrey Sessums, Arturo Ye, Jacinto Molina, Shawn Roberts, Monica Giurgius
