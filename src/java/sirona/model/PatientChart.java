@@ -18,9 +18,34 @@ public class PatientChart {
     private ArrayList<Perscription> per;
     private String doctorNotesPath;
     
-    public PatientChart(){
-        
+    public PatientChart(MedicalHistory H, ArrayList<Diagnosis> d, ArrayList<Perscription> p, String dnp){
+        this.history = H;
+        this.dia = d;
+        this.per = p;
+        this.doctorNotesPath = dnp;
     }
+     public PatientChart(){
+        this.history = new MedicalHistory();
+        this.dia = new ArrayList<Diagnosis>();
+        this.per = new ArrayList<Perscription>();
+        this.doctorNotesPath = "";
+    }
+     
+     public void addPer(Perscription p){
+         this.per.add(p);
+     }
+     
+     public void addDia(Diagnosis d){
+         this.dia.add(d);
+     }
+     
+     public void removeDia(Diagnosis d){
+         this.dia.remove(d);
+     }
+     
+     public void removePer(Perscription p){
+         this.per.remove(p);
+     }
 
     public MedicalHistory getHistory() {
         return history;

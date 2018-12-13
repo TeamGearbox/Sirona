@@ -20,7 +20,17 @@ public class EMIS {
     
     
     public EMIS(){
-        
+        this.System = new ClinicSystem();
+        this.insuranceSystem = new InsuranceSystem();
+        this.labWork = new ArrayList<Lab>();
+        this.otherClinic = new ThirdPartyClinicSystem();
+    }
+    
+    public EMIS(ClinicSystem sys, InsuranceSystem inSys, ArrayList<Lab> lw,ThirdPartyClinicSystem othClinic){
+        this.System = sys;
+        this.insuranceSystem = inSys;
+        this.labWork = lw;
+        this.otherClinic = othClinic;
     }
 
     public ClinicSystem getSystem() {

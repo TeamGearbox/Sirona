@@ -9,7 +9,7 @@ import sirona.model.StaticClasses.StaffType;
 
 /**
  *
- * @author jacin
+ * @author Jacinto Molina
  */
 public class StaffProfile extends Profile{
     
@@ -18,6 +18,11 @@ public class StaffProfile extends Profile{
     public StaffProfile(StaffType type, String name, int phone, ClinicID clinicId, int mobilePhone, String email, Inbox inbox) {
         super(name, phone, clinicId, mobilePhone, email, inbox);
         this.type = type;
+    }
+    
+    public StaffProfile(StaffType ty){
+        super();
+        this.type = ty;
     }
     
 

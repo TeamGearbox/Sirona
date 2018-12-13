@@ -24,9 +24,10 @@ public class StaticClasses {
      *
      */
     public static HashMap<String, Appointment> uniqueAppList = new HashMap();
-    
+   
     public static HashMap<String, Hour> hourList = new HashMap();
     
+    public static int currentYear = 2018;
     
     
     public static void InitEverything(){

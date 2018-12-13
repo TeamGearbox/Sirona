@@ -14,8 +14,8 @@ public class Diagnosis {
     private String name;
     
     
-    public Diagnosis(){
-        
+    public Diagnosis(String dia){
+        this.name = dia;
     }
 
     public String getName() {

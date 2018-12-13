@@ -17,8 +17,14 @@ public class Lab {
     private ArrayList<String> activeOrders;
     
     public Lab(){
-        
+        this.profile = new IndieProfile();
+        this.activeOrders = new ArrayList<String>();
     }
+     public Lab(ArrayList<String> ac, IndieProfile ip){
+        this.profile = ip;
+        this.activeOrders = ac;
+    }
+
 
     public IndieProfile getProfile() {
         return profile;

@@ -25,7 +25,7 @@ public class ClinicID {
         
        this.letterHalf = id.substring(0,4);
        this.numHalf = Integer.valueOf(id.substring(4,id.length()));
-        
+        this.ID = id;
     }
     
     // used to check if 
@@ -88,5 +88,8 @@ public class ClinicID {
         this.ID = ID;
     }
     
+    public String toString(){
+        return this.ID;
+    }
     
 }

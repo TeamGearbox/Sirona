@@ -5,7 +5,8 @@
  */
 package sirona.model;
 
-import sirona.model.StaticClasses.MonthName;
+
+import sirona.model.StaticClasses.*;
 
 /**
  *
@@ -47,6 +48,9 @@ public class Date {
         this.hour = hour;
     }
     
+    public String toString(){
+        return this.month + "," + this.day.toString() + " " + this.hour.toString() + StaticClasses.currentYear;
+    }
     //TODO: ToString
     
 }

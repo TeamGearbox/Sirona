@@ -14,6 +14,8 @@ import java.util.ArrayList;
 // TODO: Need to update to integrate HASHMAP list.
 public class AppointmentSystem {
     
+    
+    
     private ArrayList<Appointment> listOfAppointments;
     
     public AppointmentSystem(){

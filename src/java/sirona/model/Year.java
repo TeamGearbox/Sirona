@@ -15,8 +15,14 @@ public class Year {
     private ArrayList<Month> listOfMonths;
     private int Year;
     
+    
+    
     public Year(int year){
         this.Year = year;
+    }
+    
+    public Year(){
+        this.Year = StaticClasses.currentYear;
     }
 
     public ArrayList<Month> getListOfMonths() {

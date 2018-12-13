@@ -35,19 +35,6 @@ public class Patient {
        this.isActive = true;
        this.account = 0.0;
     }
-    
-    public Patient(File patientInfo){
-        //File Read in With Data//
-        /*  patient info 
-            doc id
-            username
-            insureance 
-            
-        */
-        
-        
-        
-    }
 
     public PatientProfile getProfile() {
         return profile;
@@ -66,7 +53,7 @@ public class Patient {
     }
 
     public String getUsername() {
-        return username;
+        return this.profile.getClinicId().toString();
     }
 
     public void setUsername(String username) {

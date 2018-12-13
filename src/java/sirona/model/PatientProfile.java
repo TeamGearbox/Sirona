@@ -11,7 +11,7 @@ import sirona.model.StaticClasses.Gender;
 
 /**
  *
- * @author jacin
+ * @author Jacinto Molina
  */
 public class PatientProfile extends Profile{
     

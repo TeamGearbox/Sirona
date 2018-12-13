@@ -24,7 +24,7 @@ public class Month {
         monthDate = name;
         
         for(int i = 1; i < (days+1);i++){
-            this.listOfDays.add(new Day(i,getDayDay(StaticClasses.dayType),this.monthDate));
+            this.listOfDays.add(new Day(i,getDayDay(StaticClasses.dayType)));
             StaticClasses.dayType++;
         }
         

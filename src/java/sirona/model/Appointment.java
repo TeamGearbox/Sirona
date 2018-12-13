@@ -16,27 +16,30 @@ public class Appointment {
     
     private DayName day;
     private MonthName month;
-    private Time hour;
+    private TimeSlot hour;
     private boolean isValid;
     private boolean isAM;
     private ClinicID patientID;
+    private int dayNum;
     private ClinicID doctorID;
     private String recName;
+    private Date Dday;
     
-    public Appointment(DayName pDay, MonthName pMonth, Time pHour, boolean pIsValid, boolean pIsAm, ClinicID pPatientID, ClinicID pDoctorID){
-        this.day = pDay;
-        this.month = pMonth;
-        this.hour = pHour;
+    public Appointment(Date d, boolean pIsValid, boolean pIsAm, ClinicID pPatientID, ClinicID pDoctorID){
+        this.day = d.getDay().getDayName();
+        this.dayNum = d.getDay().getDayNum();
+        this.month = d.getMonth();
+        this.hour = d.getHour().getTimeSlot();
+        this.Dday = d;
         this.isValid = pIsValid;
         this.isAM = pIsAm;
         this.patientID = pPatientID;
         this.doctorID = pDoctorID;
         
         // check to see if member varibles arent null;
-        this.recName = (this.day + " " + this.month + " " + this.hour + " " + this.patientID);
+        this.recName = ("Day: "+ d.getDay().toString() + ", Month: " + this.month + ", Hour: " + d.getHour().toString() );
         
-        StaticClasses.uniqueAppList.put(this.recName, this);
-        
+        StaticClasses.uniqueAppList.put(this.recName, this);    
     }
     
 
@@ -64,11 +67,11 @@ public class Appointment {
         this.month = month;
     }
 
-    public Time getHour() {
+    public TimeSlot getHour() {
         return hour;
     }
 
-    public void setHour(Time hour) {
+    public void setHour(TimeSlot hour) {
         this.hour = hour;
     }
 
@@ -102,5 +105,10 @@ public class Appointment {
 
     public void setDoctorID(ClinicID doctorID) {
         this.doctorID = doctorID;
+    }
+    
+    //Format Date, Patient ID, DoctorID, isValid
+    public String toString(){
+        return this.recName + "\nPatient ID: " + this.patientID.toString() + "\nDoctor ID: " + this.doctorID.toString();
     }
 }

@@ -7,10 +7,11 @@
 package sirona.model;
 
 import java.util.ArrayList;
+import sirona.model.StaticClasses.*;
 
 /**
  *
- * @author jacin
+ * @author Jacinto Molina
  */
 public class Doctor {
 
@@ -20,7 +21,14 @@ public class Doctor {
     private ArrayList<Appointment> appList;
     
     public Doctor(){
-        
+        this.profile = new StaffProfile( StaffType.Doctor);
+        this.patientList = new ArrayList<Patient>();
+        this.appList = new ArrayList<Appointment>();
+    }
+     public Doctor(ArrayList<Patient> pl, ArrayList<Appointment> app, StaffProfile w){
+        this.patientList = pl;
+        this.appList = app;
+        this.profile = w;
     }
     
     public void removePatient(Patient remPat){

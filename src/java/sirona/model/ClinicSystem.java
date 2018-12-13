@@ -34,7 +34,6 @@ public class ClinicSystem {
         this.appointSystem = ap;
         this.payment = ps;  
     }
-
     public ArrayList<Doctor> getDoctorList() {
         return doctorList;
     }

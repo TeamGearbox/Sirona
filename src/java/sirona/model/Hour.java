@@ -22,7 +22,7 @@ public class Hour {
     
     
     
-    public Hour(boolean isMorning, int hour){
+    public Hour(boolean isMorning, int hour){ //Add a Mins Class.
         this.hourTime = hour;
         this.isAM = isMorning;
         this.top = new TimeSlot(hour,TimeSlotHalf.Top);
@@ -68,13 +68,24 @@ public class Hour {
     public void setIsAM(boolean isAM) {
         this.isAM = isAM;
     }
-
+    
+    public TimeSlot getTimeSlot(){
+        
+       // Depending on the mins
+       
+       return this.top; 
+    }
+    
     public int getHourTime() {
         return this.hourTime;
     }
 
     public void setHourTime(int hourTime) {
         this.hourTime = hourTime;
+    }
+    
+    public String toString(){
+        return this.hourName;
     }
     
 }

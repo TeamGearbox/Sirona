@@ -22,6 +22,23 @@ public class MedicalHistory {
     private ArrayList<String> previousProviders;
     
     public MedicalHistory(){
+          this.allergies = new ArrayList<String>();
+         this.vaccinations = new ArrayList<String>();
+         this.isSmoking = false;
+         this.isTobaccoUser = false;
+         this.medicalProblems = new ArrayList<String>();
+         this.procedures = new ArrayList<String>();
+         this.previousProviders = new ArrayList<String>();
+    }
+     public MedicalHistory(ArrayList<String> al, ArrayList<String> vac, boolean smoking, boolean tobbacco, ArrayList<String> mp, ArrayList<String> pro,ArrayList<String> prov)
+     {
+         this.allergies = al;
+         this.vaccinations = vac;
+         this.isSmoking = smoking;
+         this.isTobaccoUser = tobbacco;
+         this.medicalProblems = mp;
+         this.procedures = pro;
+         this.previousProviders = prov;
         
     }
 

@@ -31,8 +31,14 @@ public class Profile {
         this.inbox = inbox;
     }
 
-    
-
+    public Profile(){
+        this.name = "";
+        this.phone = 0;
+        this.clinicId = new ClinicID("abc123");
+        this.mobilePhone = 0;
+        this.email = "";
+        this.inbox = new Inbox();
+    }
 
     public String getName() {
         return name;

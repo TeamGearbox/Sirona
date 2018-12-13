@@ -7,7 +7,7 @@ package sirona.model;
 
 /**
  *
- * @author jacin
+ * @author Jacinto Molina
  */
 public class EmergencyContact {
     
@@ -18,8 +18,21 @@ public class EmergencyContact {
     private int workPhone;
     
     public EmergencyContact(){
-        
+        this.name = "";
+        this.relationship = "";
+        this.homePhone = 0;
+        this.mobilePhont = 0;
+        this.workPhone = 0;
     }
+    
+     public EmergencyContact(String n, String re, int hp, int mp, int wp){
+        this.name = n;
+        this.relationship = re;
+        this.homePhone = hp;
+        this.mobilePhont = mp;
+        this.workPhone = wp;
+    }
+
 
     public String getName() {
         return name;

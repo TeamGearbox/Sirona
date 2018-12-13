@@ -24,14 +24,15 @@ public class Day {
     private ArrayList<Hour> listOfhour = new ArrayList<Hour>();
     
     
-    public Day(int day, DayName dayName,MonthName mName){
+    public Day(int day, DayName dayName){
         this.day = day;
        
         this.dayName = dayName;
         this.isHoliday = false;
         
-        this.dayStringName = mName+":"+this.dayName+":"+this.day;
+        this.dayStringName =this.dayName+":"+this.day;
         
+        //Testing
         for(int i = 0; i < 2; i++){
           for(int j = 1; j < 13; j++){
             if(i == 0){
@@ -62,6 +63,14 @@ public class Day {
 
     public void setIsHoliday(boolean isHoliday) {
         this.isHoliday = isHoliday;
+    }
+    
+    public int getDayNum(){
+        return this.day;
+    }
+    
+    public String toString(){
+        return this.dayName +" " + this.day;
     }
     
 }

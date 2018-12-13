@@ -18,7 +18,19 @@ public class Perscription {
     private int refills;
     
     public Perscription(){
-        
+        this.name = "";
+        this.time = "";
+        this.ml = "";
+        this.directions = "";
+        this.refills = 0;
+    }
+    
+    public Perscription(String n, String t, String m,String d, int re){
+        this.name = n;
+        this.time = t;
+        this.ml = m;
+        this.directions = d;
+        this.refills = re;
     }
 
     public String getName() {

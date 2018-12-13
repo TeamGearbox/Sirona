@@ -6,18 +6,23 @@
 package sirona.model;
 
 import java.util.ArrayList;
+import sirona.model.StaticClasses.*;
 
 /**
  *
- * @author jacin
+ * @author Jacinto Molina
  */
-public class Nurse {
-    
+public class Nurse{
     private StaffProfile profile;
     private ArrayList<Patient> tempPatientList;
     
     public Nurse(){
-        
+        this.profile  = new StaffProfile(StaffType.Nurse);
+        this.tempPatientList = new ArrayList<Patient>();
+    }
+     public Nurse(ArrayList<Patient> p, StaffProfile sp){
+        this.profile = sp;
+        this.tempPatientList = p;
     }
 
     public StaffProfile getProfile() {
@@ -26,6 +31,14 @@ public class Nurse {
 
     public void setProfile(StaffProfile profile) {
         this.profile = profile;
+    }
+    
+    public void addPatientToList(Patient p){
+        this.tempPatientList.add(p);
+    }
+    
+    public void removePatientFromList(Patient p){
+        this.tempPatientList.remove(p);
     }
 
     public ArrayList<Patient> getTempPatientList() {

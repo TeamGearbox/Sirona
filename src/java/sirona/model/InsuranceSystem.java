@@ -9,16 +9,28 @@ import java.util.ArrayList;
 
 /**
  *
- * @author jacin
+ * @author Jacinto Molina
  */
 public class InsuranceSystem {
     
     private ArrayList<Insurance> supportiveInsurance;
     
     public InsuranceSystem(){
+        this.supportiveInsurance = new ArrayList<Insurance>();
+    }
+      public InsuranceSystem(ArrayList<Insurance> sI){
+          this.supportiveInsurance = sI;
         
     }
-
+      
+    public void removeInsurance(Insurance in){
+        this.supportiveInsurance.remove(in);
+    }
+      
+     public void addInsurance(Insurance in){
+         this.supportiveInsurance.add(in);
+     }  
+      
     public ArrayList<Insurance> getSupportiveInsurance() {
         return supportiveInsurance;
     }

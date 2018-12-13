@@ -2,7 +2,7 @@ package sirona.model;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-import sirona.model.StaticClasses.DayName;
+import sirona.model.StaticClasses.*;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -19,7 +19,6 @@ public class Driver {
     private static ArrayList<Integer> num = new ArrayList<Integer>();
     
     
-    
     public static void intArr(){
         for(int i = 0; i< 10; i++){
             num.add(i);
@@ -30,23 +29,40 @@ public class Driver {
     
     public static void main(String[] args){
         
+        Date d = new Date(MonthName.March,new Day(19,DayName.Tuesday),new Hour(true,10));
+        
+        Appointment app = new Appointment(d,true, false,new ClinicID("bca321"), new ClinicID("jkl786"));
+    
+    //Test get Appointment Tostring?
+    // Check Creation
+    // Check Uniqueness of the Appointment.
+    // if isvalid is off remove from Appointment list. 
+   
+    //To String Failed
+    /*Day: Monday, Month: March, Hour: sirona.model.TimeSlot@1db9742
+    Patient ID: sirona.model.ClinicID@106d69c
+    Doctor ID: sirona.model.ClinicID@52e922
+    */
+   // System.out.println(app.toString());
+      
         StaticClasses.InitEverything();
         System.out.println(DayName.Monday);
         
+        //Clock system worked. 
         for(int i = 0; i < 2; i++){
             for(int j = 1; j < 13; j++){   
                
                 if(i == 0){
-                    System.out.println(StaticClasses.hourList.get("AM:"+j).getName());
+                    System.out.println(StaticClasses.hourList.get("AM: "+j).getName());
                 }else{
-                    System.out.println(StaticClasses.hourList.get("PM:"+j).getName());
+                    System.out.println(StaticClasses.hourList.get("PM: "+j).getName());
                 }
             
              }
         }
+        String hello = "Hello World";
         
-        
-        /*System.out.println(hello);
+        System.out.println(hello);
         
         String ch = hello.substring(0,4);
         System.out.println(ch);
@@ -63,7 +79,7 @@ public class Driver {
                 break;
 
             }else{
-                    System.out.println(" >:| Try Again..!");
+                    System.err.println(" >:| Try Again..!");
                 }
         }   
         
