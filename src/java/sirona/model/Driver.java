@@ -29,9 +29,9 @@ public class Driver {
     
     public static void main(String[] args){
         
-        Date d = new Date(MonthName.March,new Day(19,DayName.Tuesday),new Hour(true,10));
+        //Date d = new Date(MonthName.March,new Day(19,DayName.Tuesday),new Hour(true,10));
         
-        Appointment app = new Appointment(d,true, false,new ClinicID("bca321"), new ClinicID("jkl786"));
+        //Appointment app = new Appointment(d,true, false,new ClinicID("bca321"), new ClinicID("jkl786"));
     
     //Test get Appointment Tostring?
     // Check Creation
@@ -44,9 +44,9 @@ public class Driver {
     Doctor ID: sirona.model.ClinicID@52e922
     */
    // System.out.println(app.toString());
-      
+        System.out.println("Hello World!");
         StaticClasses.InitEverything();
-        System.out.println(DayName.Monday);
+       /* System.out.println(DayName.Monday);
         
         //Clock system worked. 
         for(int i = 0; i < 2; i++){
